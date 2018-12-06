@@ -46,14 +46,31 @@
                                 <color key="textColor" name="Grey"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-u9-2Rc" customClass="BoardlyTextField" customModule="BoardlyLogin" customModuleProvider="target">
+                                <rect key="frame" x="16" y="184" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-PZ-t9L">
+                                <rect key="frame" x="16" y="155" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zEq-Kt-Eh3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="5rt-gB-qlQ"/>
                             <constraint firstItem="Lwy-65-Npw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6tJ-oy-a30"/>
+                            <constraint firstItem="e8d-u9-2Rc" firstAttribute="top" secondItem="O8L-PZ-t9L" secondAttribute="bottom" constant="8" id="K0i-fP-eFg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lwy-65-Npw" secondAttribute="trailing" constant="16" id="SRU-xf-PMO"/>
+                            <constraint firstItem="e8d-u9-2Rc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V7X-kw-J3m"/>
                             <constraint firstItem="zEq-Kt-Eh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WaE-CA-nhx"/>
+                            <constraint firstItem="O8L-PZ-t9L" firstAttribute="top" secondItem="Lwy-65-Npw" secondAttribute="bottom" constant="16" id="XcX-82-9TB"/>
                             <constraint firstItem="Lwy-65-Npw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ga9-sv-ob1"/>
+                            <constraint firstItem="O8L-PZ-t9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hES-Lm-B0P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8d-u9-2Rc" secondAttribute="trailing" constant="16" id="uCI-nd-N6Z"/>
                             <constraint firstItem="Lwy-65-Npw" firstAttribute="top" secondItem="zEq-Kt-Eh3" secondAttribute="bottom" constant="8" id="yLn-QI-zYJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
