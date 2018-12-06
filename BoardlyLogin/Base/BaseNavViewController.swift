@@ -22,5 +22,7 @@ class BaseNavViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = UIColor(named: Color.primaryBlue.rawValue)
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.titleView = UIImageView(image: logo)
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.topItem?.title = ""
     }
 }

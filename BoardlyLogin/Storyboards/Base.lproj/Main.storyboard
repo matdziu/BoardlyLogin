@@ -67,6 +67,9 @@
                                 <rect key="frame" x="16" y="584" width="343" height="30"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <segue destination="p3D-MV-ZUB" kind="show" id="rbr-uL-7eM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-kJ-Isa">
                                 <rect key="frame" x="134.5" y="630" width="106" height="21"/>
@@ -103,7 +106,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258.39999999999998" y="-122.78860569715144"/>
+            <point key="canvasLocation" x="-314" y="-124"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="X4S-5n-hG5">
+            <objects>
+                <viewController id="p3D-MV-ZUB" customClass="SignUpViewController" customModule="BoardlyLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2u-JQ-IjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dAG-SC-2b0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDu-rO-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="-123"/>
         </scene>
     </scenes>
     <resources>
