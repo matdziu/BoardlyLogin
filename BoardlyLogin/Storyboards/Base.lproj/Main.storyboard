@@ -50,7 +50,7 @@
                                 <rect key="frame" x="16" y="184" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-PZ-t9L">
                                 <rect key="frame" x="16" y="155" width="74" height="21"/>
@@ -115,7 +115,54 @@
                     <view key="view" contentMode="scaleToFill" id="F2u-JQ-IjQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxJ-Os-heA" customClass="BoardlyTextField" customModule="BoardlyLogin" customModuleProvider="target">
+                                <rect key="frame" x="16" y="184" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password (must be more than 6 characters)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-rS-XeN">
+                                <rect key="frame" x="16" y="155" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-SF-ziZ" customClass="BoardlyButton" customModule="BoardlyLogin" customModuleProvider="target">
+                                <rect key="frame" x="16" y="246" width="343" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Sign up"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX2-0o-0RD">
+                                <rect key="frame" x="16" y="80" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-1Y-iFa" customClass="BoardlyTextField" customModule="BoardlyLogin" customModuleProvider="target">
+                                <rect key="frame" x="16" y="109" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vO7-rS-XeN" firstAttribute="leading" secondItem="dAG-SC-2b0" secondAttribute="leading" constant="16" id="001-wJ-csj"/>
+                            <constraint firstItem="dAG-SC-2b0" firstAttribute="trailing" secondItem="vO7-rS-XeN" secondAttribute="trailing" constant="16" id="0uU-Mj-evL"/>
+                            <constraint firstItem="DxJ-Os-heA" firstAttribute="top" secondItem="vO7-rS-XeN" secondAttribute="bottom" constant="8" id="3Xi-3T-59T"/>
+                            <constraint firstItem="iX2-0o-0RD" firstAttribute="top" secondItem="dAG-SC-2b0" secondAttribute="top" constant="16" id="FgU-tu-gcP"/>
+                            <constraint firstItem="NYm-1Y-iFa" firstAttribute="top" secondItem="iX2-0o-0RD" secondAttribute="bottom" constant="8" id="Rvb-Cd-yiy"/>
+                            <constraint firstItem="DxJ-Os-heA" firstAttribute="leading" secondItem="dAG-SC-2b0" secondAttribute="leading" constant="16" id="gNU-wr-0Oj"/>
+                            <constraint firstItem="vO7-rS-XeN" firstAttribute="top" secondItem="NYm-1Y-iFa" secondAttribute="bottom" constant="16" id="gr8-1B-4wy"/>
+                            <constraint firstItem="rCg-SF-ziZ" firstAttribute="top" secondItem="DxJ-Os-heA" secondAttribute="bottom" constant="32" id="ico-u3-WqV"/>
+                            <constraint firstItem="dAG-SC-2b0" firstAttribute="trailing" secondItem="DxJ-Os-heA" secondAttribute="trailing" constant="16" id="ijq-eu-WyB"/>
+                            <constraint firstItem="dAG-SC-2b0" firstAttribute="trailing" secondItem="NYm-1Y-iFa" secondAttribute="trailing" constant="16" id="lij-E5-ndg"/>
+                            <constraint firstItem="rCg-SF-ziZ" firstAttribute="leading" secondItem="dAG-SC-2b0" secondAttribute="leading" constant="16" id="ltF-m6-gzc"/>
+                            <constraint firstItem="iX2-0o-0RD" firstAttribute="leading" secondItem="dAG-SC-2b0" secondAttribute="leading" constant="16" id="w9p-wX-Was"/>
+                            <constraint firstItem="dAG-SC-2b0" firstAttribute="trailing" secondItem="rCg-SF-ziZ" secondAttribute="trailing" constant="16" id="yYg-uM-cvi"/>
+                            <constraint firstItem="NYm-1Y-iFa" firstAttribute="leading" secondItem="dAG-SC-2b0" secondAttribute="leading" constant="16" id="zcS-YD-5bA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dAG-SC-2b0"/>
                     </view>
                 </viewController>
