@@ -103,10 +103,40 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wl3-Wp-gxW"/>
+                    <connections>
+                        <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="SBW-I7-SOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-314" y="-124"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="UL7-s0-h0p">
+            <objects>
+                <viewController id="hFc-p5-J6P" customClass="HomeViewController" customModule="BoardlyLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vnj-yc-pl3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO BOARDLY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-kA-VOx">
+                                <rect key="frame" x="92.5" y="355" width="190" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dmk-kA-VOx" firstAttribute="centerX" secondItem="zBQ-py-LjP" secondAttribute="centerX" id="ecn-Zr-7PU"/>
+                            <constraint firstItem="Dmk-kA-VOx" firstAttribute="centerY" secondItem="zBQ-py-LjP" secondAttribute="centerY" id="o7P-MY-bNp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBQ-py-LjP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Var-9H-Y4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="-813"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="X4S-5n-hG5">
@@ -165,6 +195,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dAG-SC-2b0"/>
                     </view>
+                    <connections>
+                        <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="NU8-YZ-D3r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDu-rO-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,4 +209,7 @@
             <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NU8-YZ-D3r"/>
+    </inferredMetricsTieBreakers>
 </document>

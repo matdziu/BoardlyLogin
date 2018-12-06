@@ -19,6 +19,7 @@
 		90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */; };
 		90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */; };
 		90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87721B9683600DB6AE0 /* SignUpViewController.swift */; };
+		90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87A21B96BD400DB6AE0 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardlyTextField.swift; sourceTree = "<group>"; };
 		90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardlyButton.swift; sourceTree = "<group>"; };
 		90A7F87721B9683600DB6AE0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		90A7F87A21B96BD400DB6AE0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		90A7F84421B94DDB00DB6AE0 /* BoardlyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				90A7F87921B96BC600DB6AE0 /* Home */,
 				90A7F87121B95D3800DB6AE0 /* Custom Views */,
 				90A7F86C21B9596800DB6AE0 /* Constants */,
 				90A7F86921B957D800DB6AE0 /* Base */,
@@ -168,6 +171,14 @@
 				90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		90A7F87921B96BC600DB6AE0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				90A7F87A21B96BD400DB6AE0 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 				90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
+				90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
 				90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */,
