@@ -11,6 +11,8 @@ import UIKit
 
 class BaseNavViewController: UIViewController {
     
+    private let logo = UIImage(named: Image.logo.rawValue)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpNavigationBar()
@@ -18,5 +20,6 @@ class BaseNavViewController: UIViewController {
     
     private func setUpNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor(named: Color.primaryBlue.rawValue)
+        navigationItem.titleView = UIImageView(image: logo)
     }
 }

@@ -15,6 +15,7 @@
 		90A7F85B21B94DDC00DB6AE0 /* BoardlyLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F85A21B94DDC00DB6AE0 /* BoardlyLoginTests.swift */; };
 		90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86A21B957F100DB6AE0 /* BaseNavViewController.swift */; };
 		90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */; };
+		90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		90A7F85C21B94DDC00DB6AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90A7F86A21B957F100DB6AE0 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */,
+				90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
+				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
 				90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */,
 			);
