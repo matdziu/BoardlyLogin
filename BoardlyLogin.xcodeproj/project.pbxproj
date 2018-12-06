@@ -17,6 +17,7 @@
 		90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */; };
 		90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */; };
 		90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */; };
+		90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardlyTextField.swift; sourceTree = "<group>"; };
+		90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardlyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */,
+				90A7F87521B962FC00DB6AE0 /* BoardlyButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
+				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
 				90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */,

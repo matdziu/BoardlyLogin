@@ -20,6 +20,7 @@ class BaseNavViewController: UIViewController {
     
     private func setUpNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor(named: Color.primaryBlue.rawValue)
+        navigationController?.navigationBar.isTranslucent = false
         navigationItem.titleView = UIImageView(image: logo)
     }
 }
