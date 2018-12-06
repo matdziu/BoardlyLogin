@@ -16,6 +16,7 @@
 		90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86A21B957F100DB6AE0 /* BaseNavViewController.swift */; };
 		90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */; };
 		90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */; };
+		90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		90A7F86A21B957F100DB6AE0 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
 		90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardlyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		90A7F84421B94DDB00DB6AE0 /* BoardlyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				90A7F87121B95D3800DB6AE0 /* Custom Views */,
 				90A7F86C21B9596800DB6AE0 /* Constants */,
 				90A7F86921B957D800DB6AE0 /* Base */,
 				90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */,
@@ -151,6 +154,14 @@
 				90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		90A7F87121B95D3800DB6AE0 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				90A7F87321B95D6900DB6AE0 /* BoardlyTextField.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
+				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
 				90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */,
 			);
