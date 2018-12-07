@@ -122,6 +122,7 @@
 		90A7F84421B94DDB00DB6AE0 /* BoardlyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				90F6040C21BA784D00F6D65B /* Common */,
 				90F6040921BA758A00F6D65B /* Extensions */,
 				90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */,
 				90A7F87921B96BC600DB6AE0 /* Home */,
@@ -166,7 +167,6 @@
 		90A7F86721B950A100DB6AE0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				90F603FE21BA638800F6D65B /* Models */,
 				90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */,
 				90F603F821BA5C2C00F6D65B /* LoginViewState.swift */,
 				90F603FA21BA5DE500F6D65B /* PartialLoginViewState.swift */,
@@ -232,20 +232,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		90F603FE21BA638800F6D65B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				90F603FF21BA639300F6D65B /* InputData.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		90F6040921BA758A00F6D65B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				90F6040A21BA759B00F6D65B /* ViewExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		90F6040C21BA784D00F6D65B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				90F6040D21BA785900F6D65B /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		90F6040D21BA785900F6D65B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F603FF21BA639300F6D65B /* InputData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
