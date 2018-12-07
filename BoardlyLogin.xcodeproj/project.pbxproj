@@ -24,6 +24,7 @@
 		90A7F88221B974E100DB6AE0 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A7F87E21B974E100DB6AE0 /* RxCocoa.framework */; };
 		90A7F88321B974E100DB6AE0 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A7F87F21B974E100DB6AE0 /* RxAtomic.framework */; };
 		90A7F88421B974E100DB6AE0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A7F88021B974E100DB6AE0 /* RxSwift.framework */; };
+		90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603F821BA5C2C00F6D65B /* LoginViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		90A7F87E21B974E100DB6AE0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		90A7F87F21B974E100DB6AE0 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
 		90A7F88021B974E100DB6AE0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		90F603F821BA5C2C00F6D65B /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */,
+				90F603F821BA5C2C00F6D65B /* LoginViewState.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
+				90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */,
 				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
 				90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
