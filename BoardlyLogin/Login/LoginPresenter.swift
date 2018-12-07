@@ -12,9 +12,12 @@ import RxSwift
 class LoginPresenter {
     
     private let loginInteractor: LoginInteractor
+    private let disposeBag = DisposeBag()
+    private var initialViewState = LoginViewState()
     
-    init(loginInteractor: LoginInteractor) {
+    init(loginInteractor: LoginInteractor, initialViewState: LoginViewState = LoginViewState()) {
         self.loginInteractor = loginInteractor
+        self.initialViewState = initialViewState
     }
     
     func bind(loginView: LoginView) {
@@ -33,6 +36,19 @@ class LoginPresenter {
                 }
         }
         
-        
+        Observable
+            .merge([inputDataObservable])
+            .scan(initialViewState) { (viewState: LoginViewState, partialState: PartialLoginViewState) -> LoginViewState in
+                return self.reduce(previousState: viewState, partialState: partialState)
+            }
+            .startWith(initialViewState)
+            .subscribe (onNext: {(viewState: LoginViewState) in
+                loginView.render(loginViewState: viewState)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func reduce(previousState: LoginViewState, partialState: PartialLoginViewState) -> LoginViewState {
+        return partialState.reduce(previousState: previousState)
     }
 }

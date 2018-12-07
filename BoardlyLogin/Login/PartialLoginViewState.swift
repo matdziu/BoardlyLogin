@@ -9,11 +9,11 @@
 import Foundation
 
 protocol PartialLoginViewState {
-    func reduce(previousState: inout LoginViewState) -> LoginViewState
+    func reduce(previousState: LoginViewState) -> LoginViewState
 }
 
 struct ProgressState: PartialLoginViewState {
-    func reduce(previousState: inout LoginViewState) -> LoginViewState {
+    func reduce(previousState: LoginViewState) -> LoginViewState {
         return LoginViewState(progress: true)
     }
 }
@@ -23,21 +23,21 @@ struct LocalValidation: PartialLoginViewState {
     var emailValid: Bool = false
     var passwordValid: Bool = false
     
-    func reduce(previousState: inout LoginViewState) -> LoginViewState {
+    func reduce(previousState: LoginViewState) -> LoginViewState {
         return LoginViewState(emailValid: emailValid, passwordValid: passwordValid)
     }
 }
 
 struct LoginSuccess: PartialLoginViewState {
     
-    func reduce(previousState: inout LoginViewState) -> LoginViewState {
+    func reduce(previousState: LoginViewState) -> LoginViewState {
         return LoginViewState(progress: true, loginSuccess: true)
     }
 }
 
 struct ErrorState: PartialLoginViewState {
     
-    func reduce(previousState: inout LoginViewState) -> LoginViewState {
+    func reduce(previousState: LoginViewState) -> LoginViewState {
         return LoginViewState(error: true)
     }
 }
