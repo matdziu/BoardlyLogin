@@ -12,6 +12,6 @@ import RxSwift
 class LoginServiceImpl: LoginService {
     
     func login(email: String, password: String) -> Observable<Bool> {
-        return .just(true)
+        return Observable.just(true).delay(RxTimeInterval(3), scheduler: ConcurrentDispatchQueueScheduler(queue: .global()))
     }
 }

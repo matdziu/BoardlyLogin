@@ -42,6 +42,7 @@ class LoginPresenter {
                 return self.reduce(previousState: viewState, partialState: partialState)
             }
             .startWith(initialViewState)
+            .observeOn(MainScheduler.instance)
             .subscribe (onNext: {(viewState: LoginViewState) in
                 loginView.render(loginViewState: viewState)
             })
