@@ -48,6 +48,8 @@
 		90F6044421BAA4C700F6D65B /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6044321BAA4C700F6D65B /* LoginInteractorTest.swift */; };
 		90F6044621BAA4ED00F6D65B /* SignUpPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6044521BAA4ED00F6D65B /* SignUpPresenterTest.swift */; };
 		90F6044821BAA50400F6D65B /* SignUpInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6044721BAA50400F6D65B /* SignUpInteractorTest.swift */; };
+		90F6044A21BAB52200F6D65B /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 90F6043121BA86BA00F6D65B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90F6044B21BAB52200F6D65B /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 90F6043221BA86BA00F6D65B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,21 @@
 			remoteInfo = BoardlyLogin;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90F6044921BAB4F000F6D65B /* Carthage */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90F6044A21BAB52200F6D65B /* Nimble.framework in Carthage */,
+				90F6044B21BAB52200F6D65B /* Quick.framework in Carthage */,
+			);
+			name = Carthage;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		90A7F84221B94DDB00DB6AE0 /* BoardlyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardlyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +380,7 @@
 				90A7F85221B94DDC00DB6AE0 /* Sources */,
 				90A7F85321B94DDC00DB6AE0 /* Frameworks */,
 				90A7F85421B94DDC00DB6AE0 /* Resources */,
+				90F6044921BAB4F000F6D65B /* Carthage */,
 			);
 			buildRules = (
 			);
