@@ -110,6 +110,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wl3-Wp-gxW"/>
                     <connections>
+                        <outlet property="emailField" destination="Lwy-65-Npw" id="04r-QH-d9i"/>
+                        <outlet property="loginButton" destination="XCe-pj-bJi" id="wo1-rA-7zn"/>
+                        <outlet property="passwordField" destination="e8d-u9-2Rc" id="5Mk-xa-Mwl"/>
                         <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="SBW-I7-SOb"/>
                     </connections>
                 </viewController>
