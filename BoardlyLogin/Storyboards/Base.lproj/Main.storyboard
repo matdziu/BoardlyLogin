@@ -216,6 +216,12 @@
                         <viewLayoutGuide key="safeArea" id="dAG-SC-2b0"/>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="NYm-1Y-iFa" id="iME-dj-a95"/>
+                        <outlet property="emailLabel" destination="iX2-0o-0RD" id="Twu-Qr-uDd"/>
+                        <outlet property="passwordField" destination="DxJ-Os-heA" id="gJR-M3-cyW"/>
+                        <outlet property="passwordLabel" destination="vO7-rS-XeN" id="XZg-63-jrH"/>
+                        <outlet property="progressView" destination="H0y-ma-djd" id="jUG-lP-rQt"/>
+                        <outlet property="signUpButton" destination="rCg-SF-ziZ" id="Jqd-f5-vRE"/>
                         <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="NU8-YZ-D3r"/>
                     </connections>
                 </viewController>
@@ -233,6 +239,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SBW-I7-SOb"/>
+        <segue reference="NU8-YZ-D3r"/>
     </inferredMetricsTieBreakers>
 </document>

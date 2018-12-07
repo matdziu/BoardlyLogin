@@ -33,6 +33,12 @@
 		90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040521BA65DA00F6D65B /* LoginPresenter.swift */; };
 		90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040721BA6F9800F6D65B /* SegueConstants.swift */; };
 		90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040A21BA759B00F6D65B /* ViewExtensions.swift */; };
+		90F6040F21BA78AD00F6D65B /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040E21BA78AD00F6D65B /* SignUpContract.swift */; };
+		90F6041121BA78C800F6D65B /* SignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041021BA78C800F6D65B /* SignUpViewState.swift */; };
+		90F6041321BA794000F6D65B /* PartialSignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */; };
+		90F6041521BA7AC900F6D65B /* SignUpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041421BA7AC900F6D65B /* SignUpServiceImpl.swift */; };
+		90F6041721BA7B0700F6D65B /* SignUpInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041621BA7B0700F6D65B /* SignUpInteractorImpl.swift */; };
+		90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,12 @@
 		90F6040521BA65DA00F6D65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		90F6040721BA6F9800F6D65B /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
 		90F6040A21BA759B00F6D65B /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		90F6040E21BA78AD00F6D65B /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
+		90F6041021BA78C800F6D65B /* SignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewState.swift; sourceTree = "<group>"; };
+		90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSignUpViewState.swift; sourceTree = "<group>"; };
+		90F6041421BA7AC900F6D65B /* SignUpServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpServiceImpl.swift; sourceTree = "<group>"; };
+		90F6041621BA7B0700F6D65B /* SignUpInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorImpl.swift; sourceTree = "<group>"; };
+		90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +194,12 @@
 			isa = PBXGroup;
 			children = (
 				90A7F87721B9683600DB6AE0 /* SignUpViewController.swift */,
+				90F6040E21BA78AD00F6D65B /* SignUpContract.swift */,
+				90F6041021BA78C800F6D65B /* SignUpViewState.swift */,
+				90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */,
+				90F6041421BA7AC900F6D65B /* SignUpServiceImpl.swift */,
+				90F6041621BA7B0700F6D65B /* SignUpInteractorImpl.swift */,
+				90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -389,17 +407,23 @@
 				90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */,
 				90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */,
 				90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */,
+				90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */,
 				90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */,
 				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
 				90F603FD21BA637100F6D65B /* LoginContract.swift in Sources */,
+				90F6041321BA794000F6D65B /* PartialSignUpViewState.swift in Sources */,
 				90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */,
 				90F6040021BA639300F6D65B /* InputData.swift in Sources */,
 				90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */,
+				90F6041121BA78C800F6D65B /* SignUpViewState.swift in Sources */,
 				90F603FB21BA5DE500F6D65B /* PartialLoginViewState.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
+				90F6040F21BA78AD00F6D65B /* SignUpContract.swift in Sources */,
+				90F6041521BA7AC900F6D65B /* SignUpServiceImpl.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
+				90F6041721BA7B0700F6D65B /* SignUpInteractorImpl.swift in Sources */,
 				90A7F86E21B9597C00DB6AE0 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
