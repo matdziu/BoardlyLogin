@@ -39,6 +39,8 @@
 		90F6041521BA7AC900F6D65B /* SignUpServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041421BA7AC900F6D65B /* SignUpServiceImpl.swift */; };
 		90F6041721BA7B0700F6D65B /* SignUpInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041621BA7B0700F6D65B /* SignUpInteractorImpl.swift */; };
 		90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */; };
+		90F6043321BA86BA00F6D65B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6043121BA86BA00F6D65B /* Nimble.framework */; };
+		90F6043421BA86BA00F6D65B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6043221BA86BA00F6D65B /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		90F6041421BA7AC900F6D65B /* SignUpServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpServiceImpl.swift; sourceTree = "<group>"; };
 		90F6041621BA7B0700F6D65B /* SignUpInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorImpl.swift; sourceTree = "<group>"; };
 		90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		90F6043121BA86BA00F6D65B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		90F6043221BA86BA00F6D65B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F6043321BA86BA00F6D65B /* Nimble.framework in Frameworks */,
+				90F6043421BA86BA00F6D65B /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,8 @@
 		90A7F85921B94DDC00DB6AE0 /* BoardlyLoginTests */ = {
 			isa = PBXGroup;
 			children = (
+				90F6043521BA870800F6D65B /* Login */,
+				90F6043621BA871600F6D65B /* Sign Up */,
 				90A7F85A21B94DDC00DB6AE0 /* BoardlyLoginTests.swift */,
 				90A7F85C21B94DDC00DB6AE0 /* Info.plist */,
 			);
@@ -242,6 +250,8 @@
 		90A7F87C21B974E100DB6AE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90F6043121BA86BA00F6D65B /* Nimble.framework */,
+				90F6043221BA86BA00F6D65B /* Quick.framework */,
 				90A7F87F21B974E100DB6AE0 /* RxAtomic.framework */,
 				90A7F87D21B974E100DB6AE0 /* RxBlocking.framework */,
 				90A7F87E21B974E100DB6AE0 /* RxCocoa.framework */,
@@ -272,6 +282,20 @@
 				90F603FF21BA639300F6D65B /* InputData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		90F6043521BA870800F6D65B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		90F6043621BA871600F6D65B /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,6 +654,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BoardlyLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -650,6 +678,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BoardlyLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
