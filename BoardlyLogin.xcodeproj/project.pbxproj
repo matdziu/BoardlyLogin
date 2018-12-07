@@ -26,6 +26,8 @@
 		90A7F88421B974E100DB6AE0 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A7F88021B974E100DB6AE0 /* RxSwift.framework */; };
 		90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603F821BA5C2C00F6D65B /* LoginViewState.swift */; };
 		90F603FB21BA5DE500F6D65B /* PartialLoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603FA21BA5DE500F6D65B /* PartialLoginViewState.swift */; };
+		90F603FD21BA637100F6D65B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603FC21BA637100F6D65B /* LoginView.swift */; };
+		90F6040021BA639300F6D65B /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603FF21BA639300F6D65B /* InputData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		90A7F88021B974E100DB6AE0 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		90F603F821BA5C2C00F6D65B /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
 		90F603FA21BA5DE500F6D65B /* PartialLoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialLoginViewState.swift; sourceTree = "<group>"; };
+		90F603FC21BA637100F6D65B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		90F603FF21BA639300F6D65B /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +155,11 @@
 		90A7F86721B950A100DB6AE0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				90F603FE21BA638800F6D65B /* Models */,
 				90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */,
 				90F603F821BA5C2C00F6D65B /* LoginViewState.swift */,
 				90F603FA21BA5DE500F6D65B /* PartialLoginViewState.swift */,
+				90F603FC21BA637100F6D65B /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -209,6 +215,14 @@
 				90A7F88021B974E100DB6AE0 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90F603FE21BA638800F6D65B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F603FF21BA639300F6D65B /* InputData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +358,9 @@
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */,
 				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
+				90F603FD21BA637100F6D65B /* LoginView.swift in Sources */,
 				90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */,
+				90F6040021BA639300F6D65B /* InputData.swift in Sources */,
 				90F603FB21BA5DE500F6D65B /* PartialLoginViewState.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,
 				90A7F86B21B957F100DB6AE0 /* BaseNavViewController.swift in Sources */,
