@@ -111,8 +111,10 @@
                     <navigationItem key="navigationItem" id="Wl3-Wp-gxW"/>
                     <connections>
                         <outlet property="emailField" destination="Lwy-65-Npw" id="04r-QH-d9i"/>
+                        <outlet property="emailLabel" destination="zEq-Kt-Eh3" id="fBJ-Re-E2y"/>
                         <outlet property="loginButton" destination="XCe-pj-bJi" id="wo1-rA-7zn"/>
                         <outlet property="passwordField" destination="e8d-u9-2Rc" id="5Mk-xa-Mwl"/>
+                        <outlet property="passwordLabel" destination="O8L-PZ-t9L" id="AgA-wZ-r4o"/>
                         <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="SBW-I7-SOb"/>
                     </connections>
                 </viewController>

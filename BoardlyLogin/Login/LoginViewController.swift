@@ -15,6 +15,8 @@ class LoginViewController: BaseNavViewController, LoginView {
     @IBOutlet weak var loginButton: BoardlyButton!
     @IBOutlet weak var emailField: BoardlyTextField!
     @IBOutlet weak var passwordField: BoardlyTextField!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,23 @@ class LoginViewController: BaseNavViewController, LoginView {
     }
     
     func render(loginViewState: LoginViewState) {
+        showErrorLabel(show: !loginViewState.emailValid, label: emailLabel)
+        showErrorLabel(show: !loginViewState.passwordValid, label: passwordLabel)
+        emailField.showError(show: !loginViewState.emailValid)
+        passwordField.showError(show: !loginViewState.passwordValid)
         
+        if loginViewState.loginSuccess {
+            navigationController?.popViewController(animated: true)
+            performSegue(withIdentifier: HOME_SEGUE, sender: self)
+        }
+    }
+    
+    private func showErrorLabel(show: Bool, label: UILabel) {
+        if show {
+            label.textColor = UIColor(named: Color.errorRed.rawValue)
+        } else {
+            label.textColor = UIColor(named: Color.grey.rawValue)
+        }
     }
 }
 

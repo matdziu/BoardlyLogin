@@ -9,4 +9,5 @@
 enum Color: String {
     case primaryBlue = "Primary Blue"
     case errorRed = "Error Red"
+    case grey = "Grey"
 }
