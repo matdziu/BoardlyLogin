@@ -23,6 +23,6 @@ class LoginViewRobot {
     }
     
     func assert(expectedViewStates: [LoginViewState]) {
-        expect(mockLoginView.renderedStates).to(equal(expectedViewStates))
+        expect(self.mockLoginView.renderedStates).to(equal(expectedViewStates))
     }
 }
