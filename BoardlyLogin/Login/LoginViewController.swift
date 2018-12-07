@@ -17,9 +17,14 @@ class LoginViewController: BaseNavViewController, LoginView {
     @IBOutlet weak var passwordField: BoardlyTextField!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var signUpButton: BoardlyButton!
+    @IBOutlet weak var privacyPolicyLabel: UILabel!
+    @IBOutlet weak var progressView: UIActivityIndicatorView!
+    private var contentViewArray: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        contentViewArray = [loginButton, emailField, passwordField, emailLabel, passwordLabel, signUpButton, privacyPolicyLabel]
         LoginPresenter(loginInteractor: LoginInteractorImpl(loginService: LoginServiceImpl())).bind(loginView: self)
     }
     
@@ -35,6 +40,7 @@ class LoginViewController: BaseNavViewController, LoginView {
         showErrorLabel(show: !loginViewState.passwordValid, label: passwordLabel)
         emailField.showError(show: !loginViewState.emailValid)
         passwordField.showError(show: !loginViewState.passwordValid)
+        showProgress(show: loginViewState.progress)
         
         if loginViewState.loginSuccess {
             navigationController?.popViewController(animated: true)
@@ -47,6 +53,15 @@ class LoginViewController: BaseNavViewController, LoginView {
             label.textColor = UIColor(named: Color.errorRed.rawValue)
         } else {
             label.textColor = UIColor(named: Color.grey.rawValue)
+        }
+    }
+    
+    private func showProgress(show: Bool) {
+        contentViewArray.show(show: show)
+        if show {
+            progressView.startAnimating()
+        } else {
+            progressView.stopAnimating()
         }
     }
 }

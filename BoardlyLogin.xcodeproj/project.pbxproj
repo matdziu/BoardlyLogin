@@ -32,6 +32,7 @@
 		90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */; };
 		90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040521BA65DA00F6D65B /* LoginPresenter.swift */; };
 		90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040721BA6F9800F6D65B /* SegueConstants.swift */; };
+		90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040A21BA759B00F6D65B /* ViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
 		90F6040521BA65DA00F6D65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		90F6040721BA6F9800F6D65B /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
+		90F6040A21BA759B00F6D65B /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		90A7F84421B94DDB00DB6AE0 /* BoardlyLogin */ = {
 			isa = PBXGroup;
 			children = (
+				90F6040921BA758A00F6D65B /* Extensions */,
 				90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */,
 				90A7F87921B96BC600DB6AE0 /* Home */,
 				90A7F87121B95D3800DB6AE0 /* Custom Views */,
@@ -235,6 +238,14 @@
 				90F603FF21BA639300F6D65B /* InputData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		90F6040921BA758A00F6D65B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90F6040A21BA759B00F6D65B /* ViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +379,7 @@
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */,
+				90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */,
 				90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */,

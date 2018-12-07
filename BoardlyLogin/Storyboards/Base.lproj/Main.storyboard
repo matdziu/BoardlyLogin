@@ -115,6 +115,9 @@
                         <outlet property="loginButton" destination="XCe-pj-bJi" id="wo1-rA-7zn"/>
                         <outlet property="passwordField" destination="e8d-u9-2Rc" id="5Mk-xa-Mwl"/>
                         <outlet property="passwordLabel" destination="O8L-PZ-t9L" id="AgA-wZ-r4o"/>
+                        <outlet property="privacyPolicyLabel" destination="O5H-kJ-Isa" id="p1q-i8-HYS"/>
+                        <outlet property="progressView" destination="mtq-fY-f10" id="ge6-TG-IOb"/>
+                        <outlet property="signUpButton" destination="n3I-G6-p0U" id="URI-0S-cAB"/>
                         <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="SBW-I7-SOb"/>
                     </connections>
                 </viewController>
