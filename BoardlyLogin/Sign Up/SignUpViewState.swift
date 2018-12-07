@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct SignUpViewState {
+struct SignUpViewState: Equatable {
     var progress: Bool = false
     var emailValid: Bool = true
     var passwordValid: Bool = true
