@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  LoginServiceImpl.swift
 //  BoardlyLogin
 //
 //  Created by Mateusz Dziubek on 07/12/2018.
@@ -9,9 +9,9 @@
 import Foundation
 import RxSwift
 
-protocol LoginView {
+class LoginServiceImpl: LoginService {
     
-    func render(loginViewState: LoginViewState)
-    
-    func inputEmitter() -> Observable<InputData>
+    func login(email: String, password: String) -> Observable<Bool> {
+        return .just(true)
+    }
 }
