@@ -25,6 +25,7 @@ class LoginViewController: BaseNavViewController, LoginView {
     override func viewDidLoad() {
         super.viewDidLoad()
         contentViewArray = [loginButton, emailField, passwordField, emailLabel, passwordLabel, signUpButton, privacyPolicyLabel]
+        initPrivacyPolicyOnClick()
         LoginPresenter(loginInteractor: LoginInteractorImpl(loginService: LoginServiceImpl())).bind(loginView: self)
     }
     
@@ -62,6 +63,17 @@ class LoginViewController: BaseNavViewController, LoginView {
             progressView.startAnimating()
         } else {
             progressView.stopAnimating()
+        }
+    }
+    
+    func initPrivacyPolicyOnClick() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(openPrivacyPolicyPage))
+        privacyPolicyLabel.addGestureRecognizer(tap)
+    }
+    
+    @objc func openPrivacyPolicyPage() {
+        if let link = URL(string: "https://google.com") {
+            UIApplication.shared.open(link)
         }
     }
 }
