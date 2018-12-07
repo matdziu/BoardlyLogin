@@ -30,6 +30,7 @@
 		90F6040021BA639300F6D65B /* InputData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F603FF21BA639300F6D65B /* InputData.swift */; };
 		90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040121BA64B800F6D65B /* LoginInteractorImpl.swift */; };
 		90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */; };
+		90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040521BA65DA00F6D65B /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		90F603FF21BA639300F6D65B /* InputData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputData.swift; sourceTree = "<group>"; };
 		90F6040121BA64B800F6D65B /* LoginInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorImpl.swift; sourceTree = "<group>"; };
 		90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
+		90F6040521BA65DA00F6D65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				90F603FC21BA637100F6D65B /* LoginContract.swift */,
 				90F6040121BA64B800F6D65B /* LoginInteractorImpl.swift */,
 				90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */,
+				90F6040521BA65DA00F6D65B /* LoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */,
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */,
