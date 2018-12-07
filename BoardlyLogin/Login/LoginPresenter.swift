@@ -30,9 +30,9 @@ class LoginPresenter {
                 let passwordValid = !trimmedPassword.isEmpty
                 
                 if !emailValid || !passwordValid {
-                    return Observable.just(LocalValidation(emailValid: emailValid, passwordValid: passwordValid))
+                    return Observable.just(PartialLogin.LocalValidation(emailValid: emailValid, passwordValid: passwordValid))
                 } else {
-                    return self.loginInteractor.login(email: trimmedEmail, password: trimmedPassword).startWith(ProgressState())
+                    return self.loginInteractor.login(email: trimmedEmail, password: trimmedPassword).startWith(PartialLogin.ProgressState())
                 }
         }
         

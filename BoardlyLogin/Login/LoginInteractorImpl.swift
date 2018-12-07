@@ -20,9 +20,9 @@ class LoginInteractorImpl: LoginInteractor {
     func login(email: String, password: String) -> Observable<PartialLoginViewState> {
         return loginService.login(email: email, password: password).map({ (success: Bool) -> PartialLoginViewState in
             if success {
-                return LoginSuccess()
+                return PartialLogin.LoginSuccess()
             } else {
-                return ErrorState()
+                return PartialLogin.ErrorState()
             }
         })
     }
