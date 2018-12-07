@@ -41,6 +41,8 @@
 		90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */; };
 		90F6043321BA86BA00F6D65B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6043121BA86BA00F6D65B /* Nimble.framework */; };
 		90F6043421BA86BA00F6D65B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90F6043221BA86BA00F6D65B /* Quick.framework */; };
+		90F6043821BA95B100F6D65B /* LoginViewRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6043721BA95B100F6D65B /* LoginViewRobot.swift */; };
+		90F6043B21BA982E00F6D65B /* MockLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6043A21BA982E00F6D65B /* MockLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		90F6041821BA7B8F00F6D65B /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		90F6043121BA86BA00F6D65B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		90F6043221BA86BA00F6D65B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		90F6043721BA95B100F6D65B /* LoginViewRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewRobot.swift; sourceTree = "<group>"; };
+		90F6043A21BA982E00F6D65B /* MockLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +291,8 @@
 		90F6043521BA870800F6D65B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				90F6043921BA982000F6D65B /* Mocks */,
+				90F6043721BA95B100F6D65B /* LoginViewRobot.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -296,6 +302,14 @@
 			children = (
 			);
 			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		90F6043921BA982000F6D65B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				90F6043A21BA982E00F6D65B /* MockLoginView.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,7 +470,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F6043B21BA982E00F6D65B /* MockLoginView.swift in Sources */,
 				90A7F85B21B94DDC00DB6AE0 /* BoardlyLoginTests.swift in Sources */,
+				90F6043821BA95B100F6D65B /* LoginViewRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
