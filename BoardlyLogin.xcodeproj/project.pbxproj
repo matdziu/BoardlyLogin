@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		908D22CE21BBF15900EE1436 /* MockLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22CD21BBF15900EE1436 /* MockLoginInteractor.swift */; };
+		908D22D021BBF61B00EE1436 /* MockSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */; };
 		90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */; };
 		90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */; };
 		90A7F84B21B94DDB00DB6AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7F84921B94DDB00DB6AE0 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		908D22CD21BBF15900EE1436 /* MockLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractor.swift; sourceTree = "<group>"; };
+		908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpInteractor.swift; sourceTree = "<group>"; };
 		90A7F84221B94DDB00DB6AE0 /* BoardlyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardlyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				90F6043D21BAA29500F6D65B /* MockSignUpView.swift */,
+				908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				90F6044421BAA4C700F6D65B /* LoginInteractorTest.swift in Sources */,
 				90F6044221BAA4B500F6D65B /* LoginPresenterTest.swift in Sources */,
 				90F6044821BAA50400F6D65B /* SignUpInteractorTest.swift in Sources */,
+				908D22D021BBF61B00EE1436 /* MockSignUpInteractor.swift in Sources */,
 				90F6043821BA95B100F6D65B /* LoginViewRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

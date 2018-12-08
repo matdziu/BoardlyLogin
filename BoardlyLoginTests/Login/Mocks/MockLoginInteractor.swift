@@ -11,7 +11,21 @@ import RxSwift
 
 class MockLoginInteractor: LoginInteractor {
     
-    func login(email: String, password: String) -> Observable<PartialLoginViewState> {
-        return Observable.just(PartialLogin.LoginSuccess())
+    private let mode: LoginInteractorMode
+    
+    init(mode: LoginInteractorMode) {
+        self.mode = mode
     }
+    
+    func login(email: String, password: String) -> Observable<PartialLoginViewState> {
+        if mode == .success {
+            return Observable.just(PartialLogin.LoginSuccess())
+        } else {
+            return Observable.just(PartialLogin.ErrorState())
+        }
+    }
+}
+
+enum LoginInteractorMode {
+    case success, error
 }
