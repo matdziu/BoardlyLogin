@@ -42,8 +42,9 @@ class LoginViewController: BaseNavViewController, LoginView {
         showProgress(show: loginViewState.progress)
         
         if loginViewState.loginSuccess {
-            navigationController?.popViewController(animated: true)
-            performSegue(withIdentifier: HOME_SEGUE, sender: self)
+            if let homeViewController = storyboard?.instantiateViewController(withIdentifier: HOME_VIEW_CONTROLLER_ID) as? HomeViewController {
+                navigationController?.setViewControllers([homeViewController], animated: true)
+            }
         }
     }
     

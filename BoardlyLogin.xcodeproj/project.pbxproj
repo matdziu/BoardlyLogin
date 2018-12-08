@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		908D22CE21BBF15900EE1436 /* MockLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22CD21BBF15900EE1436 /* MockLoginInteractor.swift */; };
 		908D22D021BBF61B00EE1436 /* MockSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */; };
+		908D22D221BBF8B000EE1436 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22D121BBF8B000EE1436 /* ViewControllerConstants.swift */; };
 		90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */; };
 		90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */; };
 		90A7F84B21B94DDB00DB6AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A7F84921B94DDB00DB6AE0 /* Main.storyboard */; };
@@ -32,7 +33,6 @@
 		90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040121BA64B800F6D65B /* LoginInteractorImpl.swift */; };
 		90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */; };
 		90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040521BA65DA00F6D65B /* LoginPresenter.swift */; };
-		90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040721BA6F9800F6D65B /* SegueConstants.swift */; };
 		90F6040F21BA78AD00F6D65B /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040E21BA78AD00F6D65B /* SignUpContract.swift */; };
 		90F6041121BA78C800F6D65B /* SignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041021BA78C800F6D65B /* SignUpViewState.swift */; };
 		90F6041321BA794000F6D65B /* PartialSignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */; };
@@ -81,6 +81,7 @@
 /* Begin PBXFileReference section */
 		908D22CD21BBF15900EE1436 /* MockLoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginInteractor.swift; sourceTree = "<group>"; };
 		908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpInteractor.swift; sourceTree = "<group>"; };
+		908D22D121BBF8B000EE1436 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConstants.swift; sourceTree = "<group>"; };
 		90A7F84221B94DDB00DB6AE0 /* BoardlyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardlyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		90F6040121BA64B800F6D65B /* LoginInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorImpl.swift; sourceTree = "<group>"; };
 		90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
 		90F6040521BA65DA00F6D65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		90F6040721BA6F9800F6D65B /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
 		90F6040E21BA78AD00F6D65B /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
 		90F6041021BA78C800F6D65B /* SignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewState.swift; sourceTree = "<group>"; };
 		90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSignUpViewState.swift; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 			children = (
 				90A7F86D21B9597C00DB6AE0 /* ColorConstants.swift */,
 				90A7F86F21B95B8200DB6AE0 /* ImageConstants.swift */,
-				90F6040721BA6F9800F6D65B /* SegueConstants.swift */,
+				908D22D121BBF8B000EE1436 /* ViewControllerConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -483,13 +483,13 @@
 				90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,
 				90F603F921BA5C2C00F6D65B /* LoginViewState.swift in Sources */,
-				90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */,
 				90A7F87621B962FC00DB6AE0 /* BoardlyButton.swift in Sources */,
 				90F603FD21BA637100F6D65B /* LoginContract.swift in Sources */,
 				90F6041321BA794000F6D65B /* PartialSignUpViewState.swift in Sources */,
 				90A7F87B21B96BD400DB6AE0 /* HomeViewController.swift in Sources */,
 				90F6040021BA639300F6D65B /* InputData.swift in Sources */,
 				90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */,
+				908D22D221BBF8B000EE1436 /* ViewControllerConstants.swift in Sources */,
 				90F6041121BA78C800F6D65B /* SignUpViewState.swift in Sources */,
 				90F603FB21BA5DE500F6D65B /* PartialLoginViewState.swift in Sources */,
 				90A7F87421B95D6900DB6AE0 /* BoardlyTextField.swift in Sources */,

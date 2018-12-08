@@ -40,8 +40,9 @@ class SignUpViewController: BaseNavViewController, SignUpView {
         showProgress(show: signUpViewState.progress)
         
         if signUpViewState.signUpSuccess {
-            navigationController?.popViewController(animated: true)
-            performSegue(withIdentifier: HOME_SEGUE, sender: self)
+            if let homeViewController = storyboard?.instantiateViewController(withIdentifier: HOME_VIEW_CONTROLLER_ID) as? HomeViewController {
+                navigationController?.setViewControllers([homeViewController], animated: true)
+            }
         }
     }
     

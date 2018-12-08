@@ -121,7 +121,6 @@
                         <outlet property="privacyPolicyLabel" destination="O5H-kJ-Isa" id="2YU-lt-Nkf"/>
                         <outlet property="progressView" destination="mtq-fY-f10" id="ge6-TG-IOb"/>
                         <outlet property="signUpButton" destination="n3I-G6-p0U" id="URI-0S-cAB"/>
-                        <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="SBW-I7-SOb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -131,13 +130,13 @@
         <!--Home View Controller-->
         <scene sceneID="UL7-s0-h0p">
             <objects>
-                <viewController id="hFc-p5-J6P" customClass="HomeViewController" customModule="BoardlyLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="hFc-p5-J6P" customClass="HomeViewController" customModule="BoardlyLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vnj-yc-pl3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO BOARDLY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-kA-VOx">
-                                <rect key="frame" x="92.5" y="355" width="190" height="21"/>
+                                <rect key="frame" x="92.5" y="333" width="190" height="21"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -228,7 +227,6 @@
                         <outlet property="passwordLabel" destination="vO7-rS-XeN" id="XZg-63-jrH"/>
                         <outlet property="progressView" destination="H0y-ma-djd" id="jUG-lP-rQt"/>
                         <outlet property="signUpButton" destination="rCg-SF-ziZ" id="Jqd-f5-vRE"/>
-                        <segue destination="hFc-p5-J6P" kind="show" identifier="homeSegue" id="NU8-YZ-D3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDu-rO-rGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,7 +242,4 @@
             <color red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="NU8-YZ-D3r"/>
-    </inferredMetricsTieBreakers>
 </document>
