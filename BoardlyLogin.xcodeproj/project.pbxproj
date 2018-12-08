@@ -31,7 +31,6 @@
 		90F6040421BA64CA00F6D65B /* LoginServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */; };
 		90F6040621BA65DA00F6D65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040521BA65DA00F6D65B /* LoginPresenter.swift */; };
 		90F6040821BA6F9800F6D65B /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040721BA6F9800F6D65B /* SegueConstants.swift */; };
-		90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040A21BA759B00F6D65B /* ViewExtensions.swift */; };
 		90F6040F21BA78AD00F6D65B /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6040E21BA78AD00F6D65B /* SignUpContract.swift */; };
 		90F6041121BA78C800F6D65B /* SignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041021BA78C800F6D65B /* SignUpViewState.swift */; };
 		90F6041321BA794000F6D65B /* PartialSignUpViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */; };
@@ -106,7 +105,6 @@
 		90F6040321BA64CA00F6D65B /* LoginServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceImpl.swift; sourceTree = "<group>"; };
 		90F6040521BA65DA00F6D65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		90F6040721BA6F9800F6D65B /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
-		90F6040A21BA759B00F6D65B /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		90F6040E21BA78AD00F6D65B /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
 		90F6041021BA78C800F6D65B /* SignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewState.swift; sourceTree = "<group>"; };
 		90F6041221BA794000F6D65B /* PartialSignUpViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialSignUpViewState.swift; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			children = (
 				90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */,
 				90F6040C21BA784D00F6D65B /* Common */,
-				90F6040921BA758A00F6D65B /* Extensions */,
 				90A7F87921B96BC600DB6AE0 /* Home */,
 				90A7F87121B95D3800DB6AE0 /* Custom Views */,
 				90A7F86C21B9596800DB6AE0 /* Constants */,
@@ -288,14 +285,6 @@
 				90A7F88021B974E100DB6AE0 /* RxSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		90F6040921BA758A00F6D65B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				90F6040A21BA759B00F6D65B /* ViewExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		90F6040C21BA784D00F6D65B /* Common */ = {
@@ -484,7 +473,6 @@
 				90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */,
 				90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */,
 				90F6040221BA64B800F6D65B /* LoginInteractorImpl.swift in Sources */,
-				90F6040B21BA759B00F6D65B /* ViewExtensions.swift in Sources */,
 				90A7F87821B9683600DB6AE0 /* SignUpViewController.swift in Sources */,
 				90F6041921BA7B8F00F6D65B /* SignUpPresenter.swift in Sources */,
 				90A7F87021B95B8200DB6AE0 /* ImageConstants.swift in Sources */,

@@ -19,11 +19,9 @@ class SignUpViewController: BaseNavViewController, SignUpView {
     @IBOutlet weak var passwordField: BoardlyTextField!
     @IBOutlet weak var signUpButton: BoardlyButton!
     @IBOutlet weak var progressView: UIActivityIndicatorView!
-    private var contentViewArray: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentViewArray = [emailField, emailLabel, passwordField, passwordLabel, signUpButton]
         SignUpPresenter(signUpInteractor: SignUpInteractorImpl(signUpService: SignUpServiceImpl())).bind(signUpView: self)
     }
     
@@ -56,7 +54,6 @@ class SignUpViewController: BaseNavViewController, SignUpView {
     }
     
     private func showProgress(show: Bool) {
-        contentViewArray.show(show: show)
         if show {
             progressView.startAnimating()
         } else {

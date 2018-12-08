@@ -20,11 +20,9 @@ class LoginViewController: BaseNavViewController, LoginView {
     @IBOutlet weak var signUpButton: BoardlyButton!
     @IBOutlet weak var privacyPolicyLabel: UILabel!
     @IBOutlet weak var progressView: UIActivityIndicatorView!
-    private var contentViewArray: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        contentViewArray = [loginButton, emailField, passwordField, emailLabel, passwordLabel, signUpButton, privacyPolicyLabel]
         initPrivacyPolicyOnClick()
         LoginPresenter(loginInteractor: LoginInteractorImpl(loginService: LoginServiceImpl())).bind(loginView: self)
     }
@@ -58,7 +56,6 @@ class LoginViewController: BaseNavViewController, LoginView {
     }
     
     private func showProgress(show: Bool) {
-        contentViewArray.show(show: show)
         if show {
             progressView.startAnimating()
         } else {
