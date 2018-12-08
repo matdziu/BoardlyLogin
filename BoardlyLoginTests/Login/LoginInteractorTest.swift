@@ -7,7 +7,34 @@
 //
 
 import Foundation
+import Quick
+import RxBlocking
+import Nimble
+@testable import BoardlyLogin
 
-class LoginInteractorTest {
+class LoginInteractorTest: QuickSpec {
     
+    override func spec() {
+        super.spec()
+        
+        describe("LoginInteractor") {
+            it("produces success") {
+                let loginInteractor = LoginInteractorImpl(loginService: MockLoginService(mode: .success))
+                let output = try! loginInteractor.login(email: "matdziu@gmail.com", password: "qwerty")
+                    .toBlocking()
+                    .toArray()
+                
+                self.expect(actualValues: output, expectedValues: [PartialLogin.LoginSuccess()])
+            }
+            
+            it("produces error") {
+                let loginInteractor = LoginInteractorImpl(loginService: MockLoginService(mode: .error))
+                let output = try! loginInteractor.login(email: "matdziu@gmail.com", password: "qwerty")
+                    .toBlocking()
+                    .toArray()
+                
+                self.expect(actualValues: output, expectedValues: [PartialLogin.ErrorState()])
+            }
+        }
+    }
 }

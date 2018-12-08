@@ -14,13 +14,13 @@ protocol PartialLoginViewState {
 
 enum PartialLogin {
     
-    struct ProgressState: PartialLoginViewState {
+    struct ProgressState: PartialLoginViewState, Equatable {
         func reduce(previousState: LoginViewState) -> LoginViewState {
             return LoginViewState(progress: true)
         }
     }
     
-    struct LocalValidation: PartialLoginViewState {
+    struct LocalValidation: PartialLoginViewState, Equatable {
         
         var emailValid: Bool = false
         var passwordValid: Bool = false
@@ -30,14 +30,14 @@ enum PartialLogin {
         }
     }
     
-    struct LoginSuccess: PartialLoginViewState {
+    struct LoginSuccess: PartialLoginViewState, Equatable {
         
         func reduce(previousState: LoginViewState) -> LoginViewState {
             return LoginViewState(progress: true, loginSuccess: true)
         }
     }
     
-    struct ErrorState: PartialLoginViewState {
+    struct ErrorState: PartialLoginViewState, Equatable {
         
         func reduce(previousState: LoginViewState) -> LoginViewState {
             return LoginViewState(error: true)

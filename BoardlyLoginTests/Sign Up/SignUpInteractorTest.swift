@@ -6,8 +6,33 @@
 //  Copyright © 2018 Mateusz Dziubek. All rights reserved.
 //
 
-import Foundation
+import RxBlocking
+import Quick
+@testable import BoardlyLogin
 
-class SignUpInteractorTest {
+class SignUpInteractorTest: QuickSpec {
     
+    override func spec() {
+        super.spec()
+        
+        describe("SignUpInteractor") {
+            it("produces success") {
+                let signUpInteractor = SignUpInteractorImpl(signUpService: MockSignUpService(mode: .success))
+                let output = try! signUpInteractor.signUp(email: "matdziu@gmail.com", password: "qwerty")
+                    .toBlocking()
+                    .toArray()
+                
+                self.expect(actualValues: output, expectedValues: [PartialSignUp.SignUpSuccess()])
+            }
+            
+            it("produces error") {
+                let signUpInteractor = SignUpInteractorImpl(signUpService: MockSignUpService(mode: .error))
+                let output = try! signUpInteractor.signUp(email: "matdziu@gmail.com", password: "qwerty")
+                    .toBlocking()
+                    .toArray()
+                
+                self.expect(actualValues: output, expectedValues: [PartialSignUp.ErrorState()])
+            }
+        }
+    }
 }
