@@ -9,13 +9,6 @@ import Quick
 import RxSwift
 @testable import BoardlyLogin
 
-class MockLoginInteractor: LoginInteractor {
-    
-    func login(email: String, password: String) -> Observable<PartialLoginViewState> {
-        return Observable.just(PartialLogin.LoginSuccess())
-    }
-}
-
 class LoginPresenterTest: QuickSpec{
     
     override func spec() {
@@ -29,10 +22,10 @@ class LoginPresenterTest: QuickSpec{
             loginViewRobot = LoginViewRobot(loginPresenter: presenter)
         }
         
-        describe("Login Presenter") {
+        describe("LoginPresenter") {
             context("valid data") {
                 it("login success") {
-                    loginViewRobot.emitInputData(inputData: InputData(email: "matdziu@gmail.com", password: "asdadjakdj"))
+                    loginViewRobot.emitInputData(inputData: InputData(email: "matdziu@gmail.com", password: "qwerty"))
                     loginViewRobot.assert(expectedViewStates: [
                         LoginViewState(),
                         LoginViewState(progress: true),
