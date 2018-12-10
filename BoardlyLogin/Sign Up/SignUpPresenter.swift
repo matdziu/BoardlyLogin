@@ -12,12 +12,12 @@ import RxSwift
 class SignUpPresenter {
     
     private let signUpInteractor: SignUpInteractor
-    private let disposeBag = DisposeBag()
-    private var initialViewState = SignUpViewState()
+    private var disposeBag = DisposeBag()
+    private let stateSubject: BehaviorSubject<SignUpViewState>!
     
     init(signUpInteractor: SignUpInteractor, initialViewState: SignUpViewState = SignUpViewState()) {
         self.signUpInteractor = signUpInteractor
-        self.initialViewState = initialViewState
+        self.stateSubject = BehaviorSubject(value: initialViewState)
     }
     
     func bind(signUpView: SignUpView) {
@@ -38,11 +38,14 @@ class SignUpPresenter {
         
         Observable
             .merge([inputDataObservable])
-            .scan(initialViewState) { (viewState: SignUpViewState, partialState: PartialSignUpViewState) -> SignUpViewState in
+            .scan(try! stateSubject.value()) { (viewState: SignUpViewState, partialState: PartialSignUpViewState) -> SignUpViewState in
                 return self.reduce(previousState: viewState, partialState: partialState)
             }
-            .startWith(initialViewState)
             .observeOn(MainScheduler.instance)
+            .bind(to: stateSubject)
+            .disposed(by: disposeBag)
+        
+        stateSubject
             .subscribe(onNext: {(viewState: SignUpViewState) in
                 signUpView.render(signUpViewState: viewState)
             })
@@ -51,6 +54,10 @@ class SignUpPresenter {
     
     private func reduce(previousState: SignUpViewState, partialState: PartialSignUpViewState) -> SignUpViewState {
         return partialState.reduce(previousState: previousState)
+    }
+    
+    func unbind() {
+        disposeBag = DisposeBag()
     }
 }
 

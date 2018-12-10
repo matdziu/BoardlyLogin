@@ -12,12 +12,12 @@ import RxSwift
 class LoginPresenter {
     
     private let loginInteractor: LoginInteractor
-    private let disposeBag = DisposeBag()
-    private var initialViewState = LoginViewState()
+    private var disposeBag = DisposeBag()
+    private let stateSubject: BehaviorSubject<LoginViewState>
     
     init(loginInteractor: LoginInteractor, initialViewState: LoginViewState = LoginViewState()) {
         self.loginInteractor = loginInteractor
-        self.initialViewState = initialViewState
+        self.stateSubject = BehaviorSubject(value: initialViewState)
     }
     
     func bind(loginView: LoginView) {
@@ -38,15 +38,22 @@ class LoginPresenter {
         
         Observable
             .merge([inputDataObservable])
-            .scan(initialViewState) { (viewState: LoginViewState, partialState: PartialLoginViewState) -> LoginViewState in
+            .scan(try! stateSubject.value()) { (viewState: LoginViewState, partialState: PartialLoginViewState) -> LoginViewState in
                 return self.reduce(previousState: viewState, partialState: partialState)
             }
-            .startWith(initialViewState)
             .observeOn(MainScheduler.instance)
+            .bind(to: stateSubject)
+            .disposed(by: disposeBag)
+        
+        stateSubject
             .subscribe (onNext: {(viewState: LoginViewState) in
                 loginView.render(loginViewState: viewState)
             })
             .disposed(by: disposeBag)
+    }
+    
+    func unbind() {
+        disposeBag = DisposeBag()
     }
     
     private func reduce(previousState: LoginViewState, partialState: PartialLoginViewState) -> LoginViewState {

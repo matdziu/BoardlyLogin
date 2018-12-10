@@ -20,11 +20,21 @@ class LoginViewController: BaseNavViewController, LoginView {
     @IBOutlet weak var signUpButton: BoardlyButton!
     @IBOutlet weak var privacyPolicyLabel: UILabel!
     @IBOutlet weak var progressView: UIActivityIndicatorView!
+    private let loginPresenter = LoginPresenter(loginInteractor: LoginInteractorImpl(loginService: LoginServiceImpl()))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initPrivacyPolicyOnClick()
-        LoginPresenter(loginInteractor: LoginInteractorImpl(loginService: LoginServiceImpl())).bind(loginView: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loginPresenter.bind(loginView: self)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        loginPresenter.unbind()
+        super.viewWillDisappear(animated)
     }
     
     func inputEmitter() -> Observable<InputData> {
