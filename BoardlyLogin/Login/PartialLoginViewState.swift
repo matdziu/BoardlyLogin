@@ -8,38 +8,21 @@
 
 import Foundation
 
-protocol PartialLoginViewState {
-    func reduce(previousState: LoginViewState) -> LoginViewState
-}
-
-enum PartialLogin {
+enum PartialLoginViewState: Equatable {
+    case progress
+    case localValidation(emailValid: Bool, passwordValid: Bool)
+    case loginSuccess
+    case errorState
     
-    struct ProgressState: PartialLoginViewState, Equatable {
-        func reduce(previousState: LoginViewState) -> LoginViewState {
+    func reduce(previousState: LoginViewState) -> LoginViewState {
+        switch self {
+        case .progress:
             return LoginViewState(progress: true)
-        }
-    }
-    
-    struct LocalValidation: PartialLoginViewState, Equatable {
-        
-        var emailValid: Bool = false
-        var passwordValid: Bool = false
-        
-        func reduce(previousState: LoginViewState) -> LoginViewState {
+        case .localValidation(let emailValid, let passwordValid):
             return LoginViewState(emailValid: emailValid, passwordValid: passwordValid)
-        }
-    }
-    
-    struct LoginSuccess: PartialLoginViewState, Equatable {
-        
-        func reduce(previousState: LoginViewState) -> LoginViewState {
+        case .loginSuccess:
             return LoginViewState(progress: true, loginSuccess: true)
-        }
-    }
-    
-    struct ErrorState: PartialLoginViewState, Equatable {
-        
-        func reduce(previousState: LoginViewState) -> LoginViewState {
+        case .errorState:
             return LoginViewState(error: true)
         }
     }

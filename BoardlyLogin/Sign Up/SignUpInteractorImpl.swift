@@ -20,9 +20,9 @@ class SignUpInteractorImpl: SignUpInteractor {
     func signUp(email: String, password: String) -> Observable<PartialSignUpViewState> {
         return signUpService.signUp(email: email, password: password).map({ (success: Bool) -> PartialSignUpViewState in
             if success {
-                return PartialSignUp.SignUpSuccess()
+                return .signUpSuccess
             } else {
-                return PartialSignUp.ErrorState()
+                return .errorState
             }
         })
         

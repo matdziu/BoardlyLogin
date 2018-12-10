@@ -8,6 +8,7 @@
 
 import RxBlocking
 import Quick
+import Nimble
 @testable import BoardlyLogin
 
 class SignUpInteractorTest: QuickSpec {
@@ -22,7 +23,7 @@ class SignUpInteractorTest: QuickSpec {
                     .toBlocking()
                     .toArray()
                 
-                self.expect(actualValues: output, expectedValues: [PartialSignUp.SignUpSuccess()])
+                expect(output).to(equal([PartialSignUpViewState.signUpSuccess]))
             }
             
             it("produces error") {
@@ -31,7 +32,7 @@ class SignUpInteractorTest: QuickSpec {
                     .toBlocking()
                     .toArray()
                 
-                self.expect(actualValues: output, expectedValues: [PartialSignUp.ErrorState()])
+                expect(output).to(equal([PartialSignUpViewState.errorState]))
             }
         }
     }

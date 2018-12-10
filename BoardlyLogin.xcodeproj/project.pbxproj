@@ -11,7 +11,6 @@
 		908D22D021BBF61B00EE1436 /* MockSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */; };
 		908D22D221BBF8B000EE1436 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22D121BBF8B000EE1436 /* ViewControllerConstants.swift */; };
 		908D22D421BBFC5E00EE1436 /* MockLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22D321BBFC5E00EE1436 /* MockLoginService.swift */; };
-		908D22D721BC156000EE1436 /* QuickSpecExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22D621BC156000EE1436 /* QuickSpecExtensions.swift */; };
 		908D22D921BC19E600EE1436 /* MockSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908D22D821BC19E600EE1436 /* MockSignUpService.swift */; };
 		90A7F84621B94DDB00DB6AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */; };
 		90A7F84821B94DDB00DB6AE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A7F84721B94DDB00DB6AE0 /* LoginViewController.swift */; };
@@ -86,7 +85,6 @@
 		908D22CF21BBF61B00EE1436 /* MockSignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpInteractor.swift; sourceTree = "<group>"; };
 		908D22D121BBF8B000EE1436 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConstants.swift; sourceTree = "<group>"; };
 		908D22D321BBFC5E00EE1436 /* MockLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginService.swift; sourceTree = "<group>"; };
-		908D22D621BC156000EE1436 /* QuickSpecExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpecExtensions.swift; sourceTree = "<group>"; };
 		908D22D821BC19E600EE1436 /* MockSignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignUpService.swift; sourceTree = "<group>"; };
 		90A7F84221B94DDB00DB6AE0 /* BoardlyLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardlyLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A7F84521B94DDB00DB6AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,14 +155,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		908D22D521BC154400EE1436 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				908D22D621BC156000EE1436 /* QuickSpecExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		90A7F83921B94DDB00DB6AE0 = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +194,6 @@
 		90A7F85921B94DDC00DB6AE0 /* BoardlyLoginTests */ = {
 			isa = PBXGroup;
 			children = (
-				908D22D521BC154400EE1436 /* Extensions */,
 				90F6043521BA870800F6D65B /* Login */,
 				90F6043621BA871600F6D65B /* Sign Up */,
 				90A7F85C21B94DDC00DB6AE0 /* Info.plist */,
@@ -526,7 +515,6 @@
 				90F6044021BAA2BA00F6D65B /* SignUpViewRobot.swift in Sources */,
 				90F6044621BAA4ED00F6D65B /* SignUpPresenterTest.swift in Sources */,
 				90F6043E21BAA29500F6D65B /* MockSignUpView.swift in Sources */,
-				908D22D721BC156000EE1436 /* QuickSpecExtensions.swift in Sources */,
 				908D22CE21BBF15900EE1436 /* MockLoginInteractor.swift in Sources */,
 				908D22D421BBFC5E00EE1436 /* MockLoginService.swift in Sources */,
 				90F6044421BAA4C700F6D65B /* LoginInteractorTest.swift in Sources */,

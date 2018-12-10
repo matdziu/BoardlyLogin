@@ -24,7 +24,7 @@ class LoginInteractorTest: QuickSpec {
                     .toBlocking()
                     .toArray()
                 
-                self.expect(actualValues: output, expectedValues: [PartialLogin.LoginSuccess()])
+                expect(output).to(equal([PartialLoginViewState.loginSuccess]))
             }
             
             it("produces error") {
@@ -33,7 +33,7 @@ class LoginInteractorTest: QuickSpec {
                     .toBlocking()
                     .toArray()
                 
-                self.expect(actualValues: output, expectedValues: [PartialLogin.ErrorState()])
+                expect(output).to(equal([PartialLoginViewState.errorState]))
             }
         }
     }

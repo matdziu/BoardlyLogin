@@ -24,7 +24,7 @@ class LoginPresenterTest: QuickSpec {
                         LoginViewState(progress: true),
                         LoginViewState(progress: true, loginSuccess: true)])
                 }
-
+                
                 it("login error") {
                     let presenter = LoginPresenter(loginInteractor: MockLoginInteractor(mode: .error))
                     let loginViewRobot = LoginViewRobot(loginPresenter: presenter)

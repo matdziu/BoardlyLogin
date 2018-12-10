@@ -19,9 +19,9 @@ class MockLoginInteractor: LoginInteractor {
     
     func login(email: String, password: String) -> Observable<PartialLoginViewState> {
         if mode == .success {
-            return Observable.just(PartialLogin.LoginSuccess())
+            return Observable.just(.loginSuccess)
         } else {
-            return Observable.just(PartialLogin.ErrorState())
+            return Observable.just(.errorState)
         }
     }
 }

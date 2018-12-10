@@ -19,9 +19,9 @@ class MockSignUpInteractor: SignUpInteractor {
     
     func signUp(email: String, password: String) -> Observable<PartialSignUpViewState> {
         if mode == .success {
-            return Observable.just(PartialSignUp.SignUpSuccess())
+            return Observable.just(.signUpSuccess)
         } else {
-            return Observable.just(PartialSignUp.ErrorState())
+            return Observable.just(.errorState)
         }
     }
 }
